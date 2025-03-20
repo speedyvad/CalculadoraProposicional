@@ -92,6 +92,21 @@
             color: var(--button-text);
         }
         
+          /* Estilos do Header */
+          .header {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--button-bg);
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
         button.operator-group {
             font-size: 20px;
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -162,6 +177,7 @@
 
 <body>
     <div class="container">
+        <header class="header">Calculadora Proposicional</header>
         <div class="row">
             <!-- Botão Sobre Nós -->
             <div class="col-12 text-end mb-3">
